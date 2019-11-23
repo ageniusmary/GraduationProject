@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:paddingLeft="5dp"
+  android:paddingRight="10dp">
+
+  <com.example.mary.graduationproject.View.CircleImageView
+    android:id="@+id/iv_avatar_image"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:src="@drawable/ic_launcher_background" />
+
+  <TextView
+    android:id="@+id/tv_receive_user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_toRightOf="@+id/iv_avatar_image"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:text="AgentName"
+    android:textColor="@color/chatui_chat_msg_text_color"
+    android:textSize="16sp" />
+
+  <TextView
+    android:id="@+id/iv_receive_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_receive_user_name"
+    android:layout_marginTop="5dp"
+    android:layout_toRightOf="@id/iv_avatar_image"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textColor="@color/chatui_chat_input_hint"
+    android:textSize="13sp"
+    tools:text="ChatContent" />
+
+  <TextView
+    android:id="@+id/tv_receive_message_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/iv_receive_message"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:textColor="@color/chatui_chat_input_hint"
+    android:textSize="12sp"
+    tools:text="11:51" />
+
+</RelativeLayout>

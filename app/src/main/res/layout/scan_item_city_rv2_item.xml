@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center">
+
+  <LinearLayout
+    android:id="@+id/scan_item_city_ll"
+    android:layout_width="160dp"
+    android:layout_height="270dp"
+    android:orientation="vertical">
+  <ImageView
+    android:id="@+id/scan_item_city_iv2"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:background="@mipmap/timg"/>
+
+  <TextView
+    android:id="@+id/scan_item_city_tv2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="香港"
+    android:textSize="25dp"
+    android:textColor="@color/chatui_chat_msg_text_color"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"/>
+
+  <TextView
+    android:id="@+id/scan_item_city_tv_money"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="人均¥440/晚"
+    android:textSize="18dp"
+    android:layout_marginLeft="10dp"/>
+
+  </LinearLayout>
+
+</LinearLayout>

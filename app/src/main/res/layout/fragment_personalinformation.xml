@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_person_message_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white">
+
+      <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/back" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="编辑个人资料"
+        android:textSize="25dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:id="@+id/edit_user_image"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:src="@mipmap/mary" />
+    <TextView
+      android:id="@+id/show_user_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="马 瑞"
+      android:textSize="30dp" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="编辑姓名"
+      android:textColor="@color/edit_person_name"
+      android:textSize="20dp" />
+
+    <View
+      android:id="@+id/view"
+      android:layout_width="match_parent"
+      android:layout_height="0.3dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="25dp"
+      android:layout_marginTop="5dp"
+      android:background="@color/chatui_chat_input_hint" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="私人信息"
+      android:textSize="25dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@android:color/white"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:id="@+id/tv_sex"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="性别"
+          android:textSize="16dp" />
+
+        <ImageView
+          android:id="@+id/iv_select_sex"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:src="@mipmap/right_back" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_sex"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="出生日期"
+          android:textSize="16dp" />
+
+        <TextView
+          android:id="@+id/tv_edit_broth"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:padding="5dp"
+          android:text="1998/11/20"
+          android:textColor="@color/edit_person_name" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_edit_broth"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="电子邮件"
+          android:textSize="16dp" />
+
+        <TextView
+          android:id="@+id/tv_edit_email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="3dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:padding="5dp"
+          android:text="ageniusmary@gmail.com"
+          android:textColor="@color/edit_person_name" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_edit_email"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="电话"
+          android:textSize="16dp" />
+
+        <TextView
+          android:id="@+id/tv_edit_tel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:padding="5dp"
+          android:text="188 2907 5781"
+          android:textColor="@color/edit_person_name" />
+
+      </RelativeLayout>
+    </LinearLayout>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="选填信息"
+      android:textSize="25dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@android:color/white"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:id="@+id/tv_location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="位置"
+          android:textSize="16dp" />
+
+        <TextView
+          android:id="@+id/tv_edit_location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:padding="5dp"
+          android:text="中国"
+          android:textColor="@color/edit_person_name" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_location"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:id="@+id/tv_school"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="学校"
+          android:textSize="16dp" />
+
+        <ImageView
+          android:id="@+id/iv_select_school"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:src="@mipmap/right_back" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_school"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:id="@+id/tv_work"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="工作"
+          android:textSize="16dp" />
+
+        <ImageView
+          android:id="@+id/iv_select_work"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:src="@mipmap/right_back" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_work"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+          android:id="@+id/tv_language"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:text="语言"
+          android:textSize="16dp" />
+
+        <ImageView
+          android:id="@+id/iv_select_language"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="3dp"
+          android:src="@mipmap/right_back" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:layout_below="@+id/tv_language"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/chatui_chat_input_hint" />
+      </RelativeLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>

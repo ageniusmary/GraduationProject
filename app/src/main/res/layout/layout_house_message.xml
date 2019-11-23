@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_location_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="东城区·平房里的独立房间"
+            android:textColor="@color/chatui_chat_msg_text_color" />
+
+        <TextView
+            android:id="@+id/tv_description_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location_house"
+            android:layout_toLeftOf="@+id/iv_house_user"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:maxLines="3"
+            android:paddingRight="10dp"
+            android:text="Wuli小院仙气十足小仙女大床房-步行五分钟到王府井大街|比邻中国美术馆首都剧场以及其他"
+            android:textColor="@color/chatui_chat_house_text_color"
+            android:textSize="25dp" />
+
+        <com.example.mary.graduationproject.View.CircleImageView
+            android:id="@+id/iv_house_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_location_house"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="1dp"
+            android:src="@mipmap/mary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_img_house_message"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@mipmap/wechatimg8" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@id/iv_img_house_message"
+            android:layout_marginTop="10dp"
+            android:background="@color/chatui_chat_input_hint" />
+
+        <LinearLayout
+            android:id="@+id/ll_house_xiangqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_house_xiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="详情"
+                android:textColor="@color/chatui_chat_house_text_color"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_house_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Hello,我是房东，叫我Amy或者小艾。很高兴认识你，欢迎你来北京，我的家，感受北京，感受我的生活。希望成为你旅途的伙伴。"
+                android:textColor="@color/chatui_chat_msg_text_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_lookxq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="查看详情"
+                android:textColor="@color/chatui_chat_bg"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@id/iv_img_house_message"
+                android:layout_marginTop="12dp"
+                android:background="@color/chatui_chat_input_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_house_mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_house_xiangqing"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="整个房源"
+                    android:textColor="@color/chatui_chat_house_text_color"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="独自使用整个空间"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入住与退房"
+                    android:textColor="@color/chatui_chat_house_text_color"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="15:00后/12:00"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自助入住"
+                    android:textColor="@color/chatui_chat_house_text_color"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="通过智能门锁自助入住"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可定状态"
+                    android:textColor="@color/chatui_chat_house_text_color"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="最少一晚"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@id/iv_img_house_message"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/chatui_chat_input_hint" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/house_message_icon" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@id/iv_img_house_message"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/chatui_chat_input_hint" />
+
+            <TextView
+                android:id="@+id/tv_house_pingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:textColor="@color/chatui_chat_msg_text_color"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_house_pinglun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="房子位置很好，就在公交站旁边，距离北京西站超级近。房子装修也很棒，住起来很舒适，非常适合跟朋友来一起居住。"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tv_house_lookpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="阅读全部评价"
+                android:textColor="@color/chatui_chat_bg"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@id/iv_img_house_message"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/chatui_chat_input_hint" />
+
+            <TextView
+                android:id="@+id/tv_house_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="地点"
+                android:textColor="@color/chatui_chat_msg_text_color"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_house_location_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="北京，北京市，中国"
+                android:textColor="@color/chatui_chat_house_text_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_location_message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="欢迎您来北京住我的民宿，此房下楼便是北京著名茶叶一条街，整条街弥漫着茶叶的香味，可谓是中国味道，"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_lookxq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:textColor="@color/chatui_chat_bg"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_location_cx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="出行"
+                android:textColor="@color/chatui_chat_house_text_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_locationcx1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="楼下马路边就有停车位"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_house_lookxq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="查看详情"
+                android:textColor="@color/chatui_chat_bg"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/iv_house_loacation_map1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/map_1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

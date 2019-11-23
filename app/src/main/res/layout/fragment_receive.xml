@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="5dp"
+      android:layout_marginRight="20dp"
+      android:src="@mipmap/receive_email" />
+  </RelativeLayout>
+
+  <include
+    android:id="@+id/layout_input"
+    layout="@layout/receive_layout_item1"/>
+  <!--
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/timg">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:gravity="bottom"
+      android:paddingLeft="3dp"
+      android:background="@android:color/transparent">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收件箱"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+<ImageView
+  android:layout_width="wrap_content"
+  android:layout_height="match_parent"
+  android:src="@mipmap/timg" />
+<android.support.v7.widget.RecyclerView
+  android:id="@+id/rv_receive"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+
+-->
+</LinearLayout>
